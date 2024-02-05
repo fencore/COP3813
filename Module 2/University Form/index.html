@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Campus Visit Feedback</title>
+    </head>
+    <body>
+        <div>
+            <h1>Campus Visit Feedback Survey</h1>
+        </div>
+        <div>
+            <form method="post" action="http://www.deitel.com">
+                <div><h2>Contact Information</h2>
+                    <p style>
+                        <label> Name:
+                            <input name="name" type="text" size="40">
+                        </label>
+                    </p>
+                    <label> Email:
+                        <input name="email" type="text" size="40">
+                    </label>
+                </div>
+                <div><h2>Survey Questions</h2>
+                    <p>What did you like about the campus during your visit?<br>
+                        <label><input name="favorites" type="checkbox" value="campus">Campus</label><br>
+                        <label><input name="favorites" type="checkbox" value="students">Students</label><br>
+                        <label><input name="favorites" type="checkbox" value="location">Location</label><br>
+                        <label><input name="favorites" type="checkbox" value="atmosphere">Atmosphere</label><br>
+                        <label><input name="favorites" type="checkbox" value="dorms">Dorm Rooms</label><br>
+                        <label><input name="favorites" type="checkbox" value="sports">Sports</label>
+                    </p>
+                    <p>
+                        How did you become interested in the University?<br>
+                        <label><input name="interested" type="radio" value="friends">Friends</label><br>
+                        <label><input name="interested" type="radio" value="tv">Television</label><br>
+                        <label><input name="interested" type="radio" value="internet">Internet</label><br>
+                        <label><input name="interested" type="radio" value="other">Other</label>
+                    </p>
+                    <p><label>Do you have any additional comments to make about your visit?<br>
+                        <textarea name="comments" rows="8" cols="80">Enter comments here.</textarea></label>
+                    </p>
+                    <p>
+                        <input name="submit" type="submit"> <input name="reset" type="reset">
+                    </p>
+                </div>
+            </form>
+        </div>
+    </body>
+</html>
