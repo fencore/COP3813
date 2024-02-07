@@ -1,20 +1,58 @@
+.center {
+    text-align: center;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
 body {
     margin-left: 10px;
     margin-right: 10px;
+    font-family: sans-serif;
+    background-image: url(https://i.zoner.work/firefish/kyushu.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 
 h1 {
-    border: solid 1px;
+    border: solid 1px yellow;
     text-align: center;
-    background-color: #e6e6e6;
+    background-color: black;
+    color: yellow;
+}
+
+p {
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+#divButton {
+    border: solid 1px;
+    background-color: #4444FF;
+    width: 120px;
+    height: 30px;
+    line-height: 30px;
+    position: absolute; 
+    left: 0; 
+    right: 0; 
+    margin-left: auto; 
+    margin-right: auto; 
+    text-align: center;
+}
+
+#divButton:hover {
+    background-color: #9999FF;
 }
 
 #para1, #para2 {
     width: 49%;
-    border: solid 1px;
-    background-color: #e6e6e6;
+    border: solid 1px yellow;
+    background-color: black;
+    color: yellow;
     text-align: left;
-    position: relative;
 }
 
 #para1 {
@@ -25,25 +63,9 @@ h1 {
     float: right;
 }
 
-#divButton {
-    border: solid 1px;
-    background-color: #4444FF;
-    position: absolute;
-    padding: 10px 30px 10px 30px;
-    margin-left: auto;
-    margin-right: auto;
-    display: block;
-}
-
 #outer {
     position: relative;
     text-align: center;
-}
-
-#divButton:hover {
-    background-color: #9999FF;
-}
-
-a {
-    color: black;
+    display: inline-block;
+    margin: 10px;
 }
