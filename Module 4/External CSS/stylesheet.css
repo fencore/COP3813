@@ -1,9 +1,3 @@
-.center {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-}
-
 body {
     margin-left: 10px;
     margin-right: 10px;
@@ -19,6 +13,8 @@ h1 {
     width: 49%;
     border: solid 1px;
     background-color: #e6e6e6;
+    text-align: left;
+    position: relative;
 }
 
 #para1 {
@@ -27,4 +23,27 @@ h1 {
 
 #para2 {
     float: right;
+}
+
+#divButton {
+    border: solid 1px;
+    background-color: #4444FF;
+    position: absolute;
+    padding: 10px 30px 10px 30px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+#outer {
+    position: relative;
+    text-align: center;
+}
+
+#divButton:hover {
+    background-color: #9999FF;
+}
+
+a {
+    color: black;
 }
