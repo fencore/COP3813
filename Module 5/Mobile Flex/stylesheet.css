@@ -38,6 +38,7 @@
     background: black;
     text-shadow: 0 0 3px white;
     font-weight: bold;
+    background-size: cover;
 }
 
 .pane1 {
