@@ -2,6 +2,7 @@ body {
     background: linear-gradient(rgba(255, 255, 255, 0.1),
             rgba(255, 255, 255, 0.1)),
             url(media/kyushu.jpg);
+    background-color: #171a2f;
     background-size: cover;
     background-attachment: fixed;
     
@@ -9,10 +10,8 @@ body {
 
 .navigation {
     display: flex;
-    flex-flow: row wrap;
     justify-content: flex-end;
     list-style: none;
-    margin: 0; 
     background: #171a2f;
     font-family: AgencyFB;
 }
@@ -21,6 +20,7 @@ body {
     text-decoration: none;
     display: block;
     padding: 1em;
+    font-size: 105%;
     color: white;
     text-align: center;
 }
@@ -70,16 +70,16 @@ body {
     text-shadow: -1px -1px 5px black;
 }
 
-@media all and (max-width: 800px) {
+@media all and (max-width: 1000px) {
     .navigation {
-        justify-content: space-around;
+        justify-content: center;
         text-align: center;
     }
 }
 
 @media all and (max-width: 600px) {
     .navigation {
-        flex-flow: column wrap;
+        flex-flow: column;
         padding: 0;
     }
     .navigation a { 
