@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Simple Calculations</title>
+        <script>
+            var userInput1;
+            var userInput2;
+            var x;
+            var y;
+
+            userInput1 = window.prompt("Enter first number:");
+            userInput2 = window.prompt("Enter second number:");
+            x = parseFloat(userInput1);
+            y = parseFloat(userInput2);
+
+            document.writeln("<h1>Simple Calculations</h1>");
+            document.writeln("<p>The sum of " + x + " and " + y + " is ", x+y);
+            document.writeln("<p>The difference of " + x + " and " + y + " is ", x-y);
+            document.writeln("<p>The product of " + x + " and " + y + " is ", x*y);
+            document.writeln("<p>The average of " + x + " and " + y + " is ", (x+y)/2);
+        </script>
+    </head>
+    <body>
+    </body>
+</html>
