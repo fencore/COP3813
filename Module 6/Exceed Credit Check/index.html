@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Exceed Credit Check</title>
+        <style>
+            body { font-family: sans-serif; }
+            table {
+                width: 50%;
+                margin-left: 20px;
+                border: none;
+            }
+            td:first-child { width: 200px; }
+            span { color: red;}
+        </style>
+    </head>
+    <body>
+        <h1>Customer Account Information</h1>
+        <table id="acctTable"></table>
+
+        <script>
+            var table = document.getElementById("acctTable");
+            var currentBalance;
+            const acctFacts = [
+                ["Enter customer's account number: ", "Account Number: "],
+                ["Enter customer's starting balance: ", "Starting Balance: "],
+                ["Enter total charges for current month: ", "Charges: "],
+                ["Enter total credits for current month: ", "Credits: "],
+                ["Enter customer's credit limit: ", "Credit Limit: "]
+            ];
+            
+            for (let i = 0; i < 5; i++) {
+                acctFacts[i][2] = (parseInt(window.prompt(acctFacts[i][0])));
+            }
+
+            currentBalance = acctFacts[1][2] + acctFacts[2][2] - acctFacts[3][2];
+
+            for (let i = 0; i < 5; i++) {
+                var row = table.insertRow();
+                var cell0 = row.insertCell(0);
+                var cell1 = row.insertCell(1);
+                cell0.innerHTML = acctFacts[i][1];
+                if (i > 0) { cell1.innerHTML = "$"; }
+                cell1.innerHTML += acctFacts[i][2];
+            }
+            
+            row = table.insertRow();
+            cell = row.insertCell();
+            cell.innerHTML = "Current Balance: ";
+            cell = row.insertCell();
+            cell.innerHTML = "$" + currentBalance;
+
+            if (currentBalance > acctFacts[4][2]) {
+                row = table.insertRow();
+                cell = row.insertCell();
+                cell.innerHTML = ("<span>Credit limit exceeded</span>");
+            }
+        </script>
+    </body>
+</html>
