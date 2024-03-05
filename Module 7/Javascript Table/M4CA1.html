@@ -1,0 +1,27 @@
+<html>
+   <head>
+      <meta charset = "utf-8">
+      <title>N * Tens, Hundreds, and Thousands</title>
+      <script>
+
+         var n = 0; // counter control variable
+
+         document.writeln(
+            "<table border = '1' style = 'text-align: center'>" );
+         document.writeln( "<tr><th>N</th><th>N*10<sup>1</sup></th>" + 
+            "<th>N*10<sup>2</sup></th><th>N*10<sup>3</sup></th>" +
+            "<th>N*10<sup>4</sup></th></tr>" );
+
+         while ( ++n <= 10 )
+         {
+            document.writeln( "<tr><td>" + n + "</td><td>" + 
+               (n * 10) + "</td>" + "<td>" + (n * 100) + 
+                "</td><td>" + (n * 1000) + "</td><td>" +
+               (n * 10000) + "</td></tr>" );
+         } // end while
+
+         document.writeln( "</table>" );
+
+      </script>
+   </head><body></body>
+</html>
