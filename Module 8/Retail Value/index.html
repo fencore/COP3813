@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Week's Retail Value</title>
+        <script>
+            var prodInput = -1;
+            var qty = 0;
+            var total = 0;
+
+            prodInput = parseInt(window.prompt("Enter product number (1-5, 0 to exit): "));
+            while (prodInput != 0) {
+                qty = parseInt(window.prompt("Enter quantity purchased: "));
+
+                switch (prodInput) {
+                    case 1:
+                        total += (qty * 2.98);
+                        break;
+                    case 2:
+                        total += (qty * 4.50);
+                        break;
+                    case 3:
+                        total += (qty * 9.98);
+                        break;
+                    case 4:
+                        total += (qty * 4.49);
+                        break;
+                    case 5:
+                        total += (qty * 6.87);
+                        break;
+                }
+                prodInput = 0;
+                qty = 0;
+                prodInput = parseInt(window.prompt("Enter product number : "));
+            } 
+
+            document.writeln("<h1>Week's Retail Value</h1>");
+            document.writeln("<div>Total Item Value: $" + total);
+        </script>
+    </head>
+    <body>
+
+    </body>
+</html>
