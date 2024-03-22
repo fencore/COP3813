@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Sorting Integers</title>
+        <script>
+            const tableData = [];
+
+            //Receive 5 integer values from user into tableData array
+            for (var i = 0; i < 5; i++) {
+                tableData.push(parseInt(window.prompt("Enter an integer: ")));
+            }
+            
+            //Copy tableData array to a new array and sort ascending
+            const sortedData = tableData.slice();
+            sortedData.sort(function (a, b) { return a - b });
+
+            //write table with original and sorted values
+            document.write("<table><tr><th>Entered</th><th>Sorted</th></tr>");
+            for (var i = 0; i < tableData.length; i++) { //iterate through both arrays for building table rows
+                document.write("<tr><td>" + tableData[i] + "</td><td>" + sortedData[i] + "</td></tr>");
+            }
+            document.write("</table>");
+        </script>
+    </head>
+    <body>
+
+    </body>
+</html>
