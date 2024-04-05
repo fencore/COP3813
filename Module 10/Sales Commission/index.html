@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Company Salary Range Counters</title>
+        <script src="sales.js"></script>
+    </head>
+    <body>
+        <h1>Company Salary Range Counters</h1>
+
+        <form onsubmit="return false">
+            <input id="salaryInput" type="number">
+            <input id="submitBtn" type="submit">
+            <input id="resetBtn" type="reset" value="Reset Form" onClick="window.location.reload();">
+        </form>
+        <br>
+        <table>
+            <tr>
+                <th>Range</th>
+                <th>Number of Enployees</th>
+            </tr>
+            <tr>
+                <td>$200 - 299</td>
+                <td id="200count">0</td>
+            </tr>
+            <tr>
+                <td>$300 - 399</td>
+                <td id="300count">0</td>
+            </tr>
+            <tr>
+                <td>$400 - 499</td>
+                <td id="400count">0</td>
+            </tr>
+            <tr>
+                <td>$500 -599</td>
+                <td id="500count">0</td>
+            </tr>
+            <tr>
+                <td>$600 - 699</td>
+                <td id="600count">0</td>
+            </tr>
+            <tr>
+                <td>$700 - 799</td>
+                <td id="700count">0</td>
+            </tr>
+            <tr>
+                <td>$800 - 899</td>
+                <td id="800count">0</td>
+            </tr>
+            <tr>
+                <td>$900 - 999</td>
+                <td id="900count">0</td>
+            </tr>
+            <tr>
+                <td>Over $1000</td>
+                <td id="1000count">0</td>
+            </tr>
+        </table>
+    </body>
+</html>
